@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Analytics } from '@vercel/analytics/next';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -43,6 +44,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </div>
         {children}
       </section>
+      <Analytics />
     </div>
   );
 };
